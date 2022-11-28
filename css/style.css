@@ -1,0 +1,84 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+h2 {
+    text-align: center;
+}
+
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+    cursor:pointer;
+}  
+
+a:hover {
+    color: rgb(99, 99, 99); 
+}
+
+body {
+    background-image: url("../img/gray.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #cccccc;
+}
+
+#grid_wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 200px;
+    grid-template-areas:
+    "he he"
+    "h1 h2"
+    "b1 b2";
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    gap: 30px 20px;
+}
+
+header {
+    grid-area: he;
+    font-size: x-large;
+}
+
+#valkommen
+{
+    grid-area: h1;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+
+}
+
+#om_oss {
+    grid-area: b1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#restaurang {
+    grid-area:b2;
+    display: flex;
+    flex-direction: column;
+
+}   
+
+#delfin {
+    grid-area: h2;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    height: 200px;
+    width: auto;
+    border-radius: 5px 10px 5px 10px;
+}
