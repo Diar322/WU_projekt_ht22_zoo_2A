@@ -20,22 +20,22 @@ a:hover {
 }
 
 body {
-    background-image: url("../img/gray.jpg");
+    background-image: url("../img/misc/sea.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-color: #cccccc;
+    backdrop-filter: blur(3px);
 }
 
-#grid_wrapper {
+#grid_wrapper_main {
     display: grid;
     height: 100vh;
-    grid-template-columns: 200px;
+    grid-template-columns: minmax(200px, 400px) minmax(200px, 400px);
     grid-template-areas:
     "he he"
     "h1 h2"
     "b1 b2";
-    gap: 10px;
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -43,9 +43,23 @@ body {
     gap: 30px 20px;
 }
 
+#grid_wrapper_om
+{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    "he he he" 
+    "a1 a2 a3"
+    "b1 b2 b3";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
 header {
     grid-area: he;
-    font-size: x-large;
+    font-size: 30px;
 }
 
 #valkommen
@@ -54,13 +68,20 @@ header {
     display: flex;
     flex-direction: column;
     justify-self: center;
-
 }
 
 #om_oss {
     grid-area: b1;
     display: flex;
     flex-direction: column;
+    
+}
+
+#om_oss_i
+{
+    display: flex;
+    flex-direction: row;
+    gap: 30px 20px;
 
 }
 
@@ -68,6 +89,12 @@ header {
     grid-area:b2;
     display: flex;
     flex-direction: column;
+}   
+
+#restaurang_i {
+    display: flex;
+    flex-direction: row;
+    gap: 30px 20px;
 
 }   
 
@@ -82,3 +109,33 @@ img {
     width: auto;
     border-radius: 5px 10px 5px 10px;
 }
+
+.person {
+    border: 5px solid black;
+}
+
+#a1 {
+    grid-area: a1;
+}
+
+#a2 {
+    grid-area: a2;
+}
+
+#a3 {
+    grid-area: a3;
+}
+
+#b1 {
+    grid-area: b1;
+}
+
+#b2 {
+    grid-area: b2;
+}
+
+#b3 {
+    grid-area: b3;
+}
+
+
