@@ -29,7 +29,8 @@ body {
 }
 
 #grid_wrapper_main {
-    display: grid;
+    display: grid;    gap: 30px 20px;
+
     height: 100vh;
     grid-template-columns: minmax(200px, 400px) minmax(200px, 400px);
     grid-template-areas:
@@ -45,6 +46,16 @@ body {
 
 #grid_wrapper_om
 {
+   display: grid;
+   height: 100vh;
+   grid-template-areas:
+   "he he"
+   "a1 a2"
+   "b1 b2";
+}
+
+#grid_wrapper_restaurang
+{
     display: grid;
     height: 100vh;
     grid-template-areas: 
@@ -55,6 +66,8 @@ body {
     align-items: center;
     justify-items: center;
     align-content: center;
+    gap: 30px 20px;
+
 }
 
 header {
@@ -95,6 +108,7 @@ header {
     display: flex;
     flex-direction: row;
     gap: 30px 20px;
+    
 
 }   
 
@@ -102,40 +116,95 @@ header {
     grid-area: h2;
     display: flex;
     flex-direction: column;
-}
-
-img {
     height: 200px;
     width: auto;
     border-radius: 5px 10px 5px 10px;
 }
 
-.person {
+.image_index {
+    height: 200px;
+    width: auto;
+    border-radius: 5px 10px 5px 10px;
+}
+
+.food {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
     border: 5px solid black;
 }
 
 #a1 {
     grid-area: a1;
+    background-image: url("../img/food/salad.jpg"); /* fallback */
+    background-size: cover;
+    background-position: center;
+
 }
 
 #a2 {
     grid-area: a2;
+    background-image: url("../img/food/salad_2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #a3 {
     grid-area: a3;
+    background-image: url("../img/food/egg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #b1 {
     grid-area: b1;
+    background-image: url("../img/food/thai.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #b2 {
     grid-area: b2;
+    background-image: url("../img/food/grot.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #b3 {
     grid-area: b3;
+    background-image: url("../img/food/kyck.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
+#restaurang_article {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
 
+#om_oss_article {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.food_item {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#socialisera {
+    grid-area: a2;
+}
+
+#om_oss_h {
+    grid-area: he;
+}
