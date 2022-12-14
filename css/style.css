@@ -5,6 +5,12 @@
     box-sizing: border-box;
 
 }
+
+h1 {
+    -webkit-text-stroke: 0.5px white;
+    font-size: 50px;
+}
+
 h2 {
     text-align: center;
 }
@@ -29,10 +35,9 @@ body {
 }
 
 #grid_wrapper_main {
-    display: grid;    gap: 30px 20px;
-
+    display: grid;
     height: 100vh;
-    grid-template-columns: minmax(200px, 400px) minmax(200px, 400px);
+    grid-template-columns: minmax(200px, 600px) minmax(200px, 600px);
     grid-template-areas:
     "he he"
     "h1 h2"
@@ -42,16 +47,26 @@ body {
     justify-items: center;
     align-content: center;
     gap: 30px 20px;
+    font-size: 23px;
 }
 
 #grid_wrapper_om
 {
+   grid-template-columns: minmax(200px, 600px) minmax(200px, 600px);
    display: grid;
    height: 100vh;
    grid-template-areas:
    "he he"
    "a1 a2"
    "b1 b2";
+   justify-content: center;
+   align-items: center;
+   justify-items: center;
+   align-content: center;
+   gap: 30px 20px;
+   font-size: 20px;
+
+
 }
 
 #grid_wrapper_restaurang
@@ -116,15 +131,26 @@ header {
     grid-area: h2;
     display: flex;
     flex-direction: column;
-    height: 200px;
+    height: 300px;
     width: auto;
     border-radius: 5px 10px 5px 10px;
 }
 
+#logo {
+    height: 350px;
+    width: auto;
+    border-radius: 20px;
+}
+
 .image_index {
-    height: 200px;
+    height: 300px;
     width: auto;
     border-radius: 5px 10px 5px 10px;
+}
+
+.png {
+    height: 300px;
+    width: auto;
 }
 
 .food {
@@ -208,3 +234,4 @@ header {
 #om_oss_h {
     grid-area: he;
 }
+
