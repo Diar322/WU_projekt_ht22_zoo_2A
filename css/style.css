@@ -36,7 +36,7 @@ body {
 
 #grid_wrapper_main {
     display: grid;
-    height: 100vh;
+    height: auto;
     grid-template-columns: minmax(200px, 600px) minmax(200px, 600px);
     grid-template-areas:
     "he he"
@@ -235,3 +235,6 @@ header {
     grid-area: he;
 }
 
+footer {
+    height: 100px;
+}
